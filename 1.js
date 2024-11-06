@@ -1,6 +1,6 @@
 console.log("mohsen");
 console.log(2+2);
-console.log(2+2);
+console.log(2+2)+3;
 // comments
 
 let name = "mohsen sarvari";
