@@ -112,10 +112,38 @@ products.forEach((product , index)=>{
             <img src="images/icons/checkmark.png" alt="Added">
             Added
           </div>
-          <button class="add-to-cart-button button-primary">
+          <button class="add-to-cart-button button-primary js-cart " data-product-id="${product.id}">
             Add to Cart
           </button>
         </div>`;
       
       showProduct.insertAdjacentHTML("beforeend", productHTML);
 })
+
+
+document.querySelectorAll('.js-cart').forEach((button)=>{
+  button.addEventListener('click',()=>{
+    //console.log(button.dataset.productName)
+    const productId = button.dataset.productId;
+    const item = cart.find((item) => item.productId === productId);
+
+    if(item){
+      item.quantity += 1 ;
+    }else{
+        cart.push({
+        productId : productId ,
+        quantity  : 1,
+    })
+    }
+
+    
+    cart.forEach(element => {
+    console.log(element)
+  
+});
+    // console.log('click')
+    // alert("adding")
+  })
+})
+
+
