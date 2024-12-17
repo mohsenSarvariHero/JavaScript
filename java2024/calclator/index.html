@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -43,3 +44,50 @@
     <script src="./calculator.js"></script>
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <h1>Calculator</h1>
+    <div class="container">
+        <input type="text" id="display" disabled> <!-- Display field -->
+        <div>
+            <button onclick="show('1')">1</button>
+            <button onclick="show('2')">2</button>
+            <button onclick="show('3')">3</button>
+            <button onclick="setOperator('+')">+</button>
+        </div>
+        <div>
+            <button onclick="show('4')">4</button>
+            <button onclick="show('5')">5</button>
+            <button onclick="show('6')">6</button>
+            <button onclick="setOperator('-')">-</button>
+        </div>
+        <div>
+            <button onclick="show('7')">7</button>
+            <button onclick="show('8')">8</button>
+            <button onclick="show('9')">9</button>
+            <button onclick="setOperator('*')">*</button>
+        </div>
+        <div>
+            <button onclick="show('0')">0</button>
+            <button onclick="show('.')">.</button>
+            <button onclick="calculate()">=</button>
+            <button onclick="setOperator('/')">/</button>
+        </div>
+        <div>
+            <button onclick="clearDisplay()">Clear</button>
+        </div>
+    </div>
+
+    <!-- Move script tag to the end -->
+    <script src="./calculator.js"></script>
+</body>
+</html>
+>>>>>>> 84b44ebb3cba5e881e05b666e379df327087d5a8
